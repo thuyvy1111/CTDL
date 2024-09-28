@@ -62,6 +62,64 @@
         <button type="submit">Create Account</button>
         <button type="button">Cancel</button>
     </form>
+    <div class="container"></div>
+        <h1>Tạo/Chỉnh Sửa Khóa Học</h1>
+        <form id="courseForm">
+            <label for="courseId">Course ID:</label>
+            <input type="text" id="courseId" value="AUTO-GENERATED" readonly>
+
+            <label for="courseName">Tên Khóa Học:</label>
+            <input type="text" id="courseName" required maxlength="255>
+
+            <label for="courseDescription">Mô Tả Khóa Học:</label>
+            <textarea id="courseDescription" rows="4"></textarea>
+
+            <label for="instructor">Giảng Viên:</label>
+            <select id="instructor" required>
+                <option value="">Chọn Giảng Viên</option>
+                <option value="instructor1">Giảng Viên 1</option>
+                <option value="instructor2">Giảng Viên 2</option>
+                <!-- Thêm nhiều giảng viên hơn nếu cần -->
+            </select>
+
+            <label for="createdAt">Ngày Tạo:</label>
+            <input type="text" id="createdAt" value="AUTO-GENERATED" readonly>
+
+            <label for="updatedAt">Ngày Cập Nhật:</label>
+            <input type="text" id="updatedAt" value="AUTO-GENERATED" readonly>
+
+            <button type="submit">Lưu</button>
+            <button type="button" onclick="cancel()">Hủy</button>
+        </form>
+
+        <div class="course-details">
+            <h2>Chi Tiết Khóa Học</h2>
+            <p>Course ID: AUTO-GENERATED</p>
+            <p>Tên Khóa Học: <span id="detailCourseName">Tên Khóa Học</span></p>
+            <p>Mô Tả Khóa Học: <span id="detailCourseDescription">Mô Tả Khóa Học</span></p>
+            <p>Giảng Viên: <span id="detailInstructor">Tên Giảng Viên</span></p>
+            <p>Ngày Tạo: AUTO-GENERATED</p>
+            <p>Ngày Cập Nhật: AUTO-GENERATED</p>
+            <button onclick="editCourse()">Chỉnh Sửa</button>
+            <button onclick="confirmDelete()">Xóa</button>
+        </div>
+    </div>
+
+    <script>
+        function cancel() {
+            // Logic hủy
+        }
+
+        function editCourse() {
+            // Logic chỉnh sửa
+        }
+
+        function confirmDelete() {
+            if (confirm("Bạn có chắc chắn muốn xóa khóa học này không?")) {
+                // Logic xóa
+            }
+        }
+    </script>
 
 </body>
 </html>
