@@ -12,6 +12,59 @@
         <a href="about.html">About</a> |
         <a href="labs.html">Labs</a>
     </nav>
-    <p>Content for Lab 1.</p>
+    <p><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+<body>
+    <h1>Create Account</h1>
+    
+    <form>
+        <!-- Username Input -->
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username" maxlength="255" required><br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" maxlength="255" required><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" maxlength="255" required><br><br>
+
+        <!-- Full Name Input (Optional) -->
+        <label for="full-name">Full Name (optional)</label><br>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name"><br><br>
+
+        <!-- Role Dropdown -->
+        <label for="role">Role</label><br>
+        <select id="role" name="role" required>
+            <option value="">Select your role</option>
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+        </select><br><br>
+
+        <!-- Profile Picture Upload -->
+        <label for="profile-picture">Profile Picture</label><br>
+        <input type="file" id="profile-picture" name="profile-picture" accept="image/*"><br><br>
+
+        <!-- Read-only fields -->
+        <label for="account-created">Account Created At</label><br>
+        <input type="text" id="account-created" name="account-created" value="2024-09-28" readonly><br><br>
+
+        <label for="last-updated">Last Updated At</label><br>
+        <input type="text" id="last-updated" name="last-updated" value="2024-09-28" readonly><br><br>
+
+        <!-- Action Buttons -->
+        <button type="submit">Create Account</button>
+        <button type="button">Cancel</button>
+    </form>
+
+</body>
+</html>
+</p>
 </body>
 </html>
